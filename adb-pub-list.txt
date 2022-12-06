@@ -22,3 +22,5 @@
 ||appnexus.com^
 ||triplelift.com^
 ||teads.tv^
+||pubmatic.com^
+||quantcast.com^
