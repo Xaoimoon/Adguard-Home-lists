@@ -24,3 +24,4 @@
 ||teads.tv^
 ||pubmatic.com^
 ||quantcast.com^
+||vr1.etoro.com^$important
