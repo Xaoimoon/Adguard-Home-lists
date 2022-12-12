@@ -10,9 +10,9 @@
 ||analytics.tiktok.com^$important
 ||telemetry.fbx-mgt.fr^$important
 ||sso.internetat.tv^$important
-||static.btloader.com
-||ads2ads.net
-||childrenheroes.org
+||static.btloader.com^
+||ads2ads.net^
+||childrenheroes.org^
 ||smartadserver.com^
 ||googlesyndication.com^
 ||doubleclick.com^
