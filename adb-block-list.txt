@@ -24,8 +24,8 @@
 ||pubmatic.com^
 ||quantcast.com^
 ||vr1.etoro.com^$important
-||an.facebook.com
-||advertising.twitter.com
-||widgets.pinterest.com
-||d.reddit.com
-||smetrics.samsung.com
+||an.facebook.com^
+||advertising.twitter.com^
+||widgets.pinterest.com^
+||d.reddit.com^
+||smetrics.samsung.com^
