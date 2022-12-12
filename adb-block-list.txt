@@ -9,7 +9,6 @@
 ||analytics-sg.tiktok.com^$important
 ||analytics.tiktok.com^$important
 ||telemetry.fbx-mgt.fr^$important
-||z0409_6.ygoods.top^$client='HomeServer'
 ||sso.internetat.tv^$important
 ||static.btloader.com
 ||ads2ads.net
