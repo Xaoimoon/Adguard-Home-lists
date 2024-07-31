@@ -1,2 +1,3 @@
 @@||hibiyasleep.github.io
 @@||logs.netflix.com^$important
+@@||imasdk.googleapis.com^$important
