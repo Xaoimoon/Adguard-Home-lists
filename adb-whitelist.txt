@@ -4,3 +4,4 @@
 @@||googleads.g.doubleclick.net^$important
 @@||homeserver^$important
 @@||events.gfe.nvidia.com^$important
+@@||jnn-pa.googleapis.com^$important
