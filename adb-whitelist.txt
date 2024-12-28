@@ -1,3 +1,6 @@
 @@||hibiyasleep.github.io
 @@||logs.netflix.com^$important
 @@||imasdk.googleapis.com^$important
+@@||googleads.g.doubleclick.net^$important
+@@||homeserver^$important
+@@||events.gfe.nvidia.com^$important
