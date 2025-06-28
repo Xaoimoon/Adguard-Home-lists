@@ -1,0 +1,1936 @@
+http:
+  pprof:
+    port: 6060
+    enabled: false
+  address: 0.0.0.0:8080
+  session_ttl: 720h
+users:
+  - name: Moon
+    password: $2a$10$CquxVPapZk2G9MmBocBuUe/vcnN/quCM3Au5Y21QC9W13ai2DpR9q
+auth_attempts: 5
+block_auth_min: 15
+http_proxy: ""
+language: ""
+theme: auto
+dns:
+  bind_hosts:
+    - 0.0.0.0
+  port: 53
+  anonymize_client_ip: false
+  ratelimit: 20
+  ratelimit_subnet_len_ipv4: 24
+  ratelimit_subnet_len_ipv6: 56
+  ratelimit_whitelist: []
+  refuse_any: true
+  upstream_dns:
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+  upstream_dns_file: ""
+  bootstrap_dns:
+    - 9.9.9.10
+    - 149.112.112.10
+    - 8.8.8.8
+    - 8.8.4.4
+    - 2620:fe::10
+    - 2620:fe::fe:10
+  fallback_dns: []
+  upstream_mode: load_balance
+  fastest_timeout: 1s
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts:
+    - version.bind
+    - id.server
+    - hostname.bind
+  trusted_proxies:
+    - 127.0.0.0/8
+    - ::1/128
+  cache_size: 4194304
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  cache_optimistic: false
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet:
+    custom_ip: ""
+    enabled: false
+    use_custom: false
+  max_goroutines: 300
+  handle_ddr: true
+  ipset: []
+  ipset_file: ""
+  bootstrap_prefer_ipv6: false
+  upstream_timeout: 10s
+  private_networks: []
+  use_private_ptr_resolvers: true
+  local_ptr_upstreams: 
+      - 192.168.0.254
+  use_dns64: false
+  dns64_prefixes: []
+  serve_http3: false
+  use_http3_upstreams: false
+  serve_plain_dns: true
+  hostsfile_enabled: true
+  pending_requests:
+    enabled: true
+tls:
+  enabled: true
+  server_name: adb-home.xaoimoon.fr
+  force_https: false
+  port_https: 8443
+  port_dns_over_tls: 853
+  port_dns_over_quic: 853
+  port_dnscrypt: 0
+  dnscrypt_config_file: ""
+  allow_unencrypted_doh: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: /opt/adguardhome/work/fullchain.pem
+  private_key_path: /opt/adguardhome/work/privkey.pem
+  strict_sni_check: false
+querylog:
+  dir_path: ""
+  ignored: 
+    - '||5549-ch4-v108.mukawaga.com^$important'
+  interval: 168h
+  size_memory: 1000
+  enabled: true
+  file_enabled: true
+statistics:
+  dir_path: ""
+  ignored: 
+    - 5549-ch4-v108.mukawaga.com
+  interval: 24h
+  enabled: true
+filters:
+  - enabled: true
+    url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+    name: AdGuard
+    id: 1
+  - enabled: true
+    url: https://adaway.org/hosts.txt
+    name: AdAway
+    id: 2
+  - enabled: true
+    url: https://someonewhocares.org/hosts/zero/hosts
+    name: Dan Pollock's List
+    id: 1633290344
+  - enabled: true
+    url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext
+    name: Peter Lowe's List
+    id: 1633290345
+  - enabled: true
+    url: https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt
+    name: Scam
+    id: 1633290346
+  - enabled: true
+    url: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+    name: Smart-TV
+    id: 1633290348
+  - enabled: true
+    url: https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
+    name: Tracking
+    id: 1633290349
+  - enabled: true
+    url: https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
+    name: Spam404
+    id: 1633290350
+  - enabled: true
+    url: https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
+    name: Suspicious
+    id: 1633290351
+  - enabled: true
+    url: https://v.firebog.net/hosts/static/w3kbl.txt
+    name: WaLLy3K
+    id: 1633290353
+  - enabled: true
+    url: https://v.firebog.net/hosts/AdguardDNS.txt
+    name: Publicite
+    id: 1633290354
+  - enabled: true
+    url: https://v.firebog.net/hosts/Prigent-Ads.txt
+    name: Publicite
+    id: 1633290355
+  - enabled: true
+    url: https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
+    name: Publicite
+    id: 1633290356
+  - enabled: true
+    url: https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+    name: Publicite
+    id: 1633290357
+  - enabled: true
+    url: https://v.firebog.net/hosts/Easylist.txt
+    name: Publicite
+    id: 1633290358
+  - enabled: true
+    url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+    name: Publicite
+    id: 1633290359
+  - enabled: true
+    url: https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts
+    name: Malware
+    id: 1633290361
+  - enabled: true
+    url: https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
+    name: Publicite
+    id: 1633290374
+  - enabled: true
+    url: https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts
+    name: Publicite
+    id: 1633290375
+  - enabled: true
+    url: https://v.firebog.net/hosts/Easyprivacy.txt
+    name: Tracking
+    id: 1633290376
+  - enabled: true
+    url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
+    name: Malware
+    id: 1633290377
+  - enabled: true
+    url: https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+    name: Malware
+    id: 1633290379
+  - enabled: true
+    url: https://v.firebog.net/hosts/Prigent-Crypto.txt
+    name: Malware
+    id: 1633290380
+  - enabled: true
+    url: https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
+    name: Malware
+    id: 1633290381
+  - enabled: true
+    url: https://phishing.army/download/phishing_army_blocklist_extended.txt
+    name: Malware
+    id: 1633290382
+  - enabled: true
+    url: https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
+    name: Malware
+    id: 1633290383
+  - enabled: true
+    url: https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
+    name: Malware
+    id: 1633290384
+  - enabled: true
+    url: https://urlhaus.abuse.ch/downloads/hostfile/
+    name: URLhaus
+    id: 1633290385
+  - enabled: true
+    url: https://sebsauvage.net/hosts/hosts-adguard
+    name: Seb Sauvage
+    id: 1633290386
+  - enabled: true
+    url: https://paulgb.github.io/BarbBlock/blacklists/hosts-file.txt
+    name: BarbBlock
+    id: 1633290392
+  - enabled: true
+    url: https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt
+    name: 'D3ward: All'
+    id: 1634856999
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
+    name: ABP filters
+    id: 1634857000
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
+    name: ABP Privacy
+    id: 1634857001
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/fanboy-social.txt
+    name: ABP Social
+    id: 1634857002
+  - enabled: true
+    url: https://easylist-downloads.adblockplus.org/liste_fr+easylist.txt
+    name: ABP FR list
+    id: 1634857003
+  - enabled: true
+    url: https://raw.githubusercontent.com/Xaoimoon/Adguard-Home-lists/main/adb-block-list.txt
+    name: Xaoimoon
+    id: 1670202946
+  - enabled: true
+    url: https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock
+    name: D3ward
+    id: 1682295344
+  - enabled: true
+    url: https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt
+    name: 'IRN: Unwanted Iranian domains'
+    id: 1690523304
+  - enabled: true
+    url: https://raw.githubusercontent.com/yous/YousList/master/hosts.txt
+    name: 'KOR: YousList'
+    id: 1690523305
+  - enabled: true
+    url: https://abpvn.com/android/abpvn.txt
+    name: 'VNM: ABPVN List'
+    id: 1704676543
+  - enabled: true
+    url: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt
+    name: 'NOR: Dandelion Sprouts nordiske filtre'
+    id: 1704676544
+  - enabled: true
+    url: https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt
+    name: 'SWE: Frellwit''s Swedish Hosts File'
+    id: 1704676545
+  - enabled: true
+    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+    name: StevenBlack
+    id: 1704676546
+whitelist_filters:
+  - enabled: true
+    url: https://raw.githubusercontent.com/Xaoimoon/Adguard-Home-lists/main/adb-whitelist.txt
+    name: Xaoimoon
+    id: 1670686866
+user_rules: 
+  - ""
+dhcp:
+  enabled: false
+  interface_name: eth0
+  local_domain_name: lan
+  dhcpv4:
+    gateway_ip: 192.168.0.254
+    subnet_mask: 255.255.255.0
+    range_start: 192.168.0.20
+    range_end: 192.168.0.199
+    lease_duration: 86400
+    icmp_timeout_msec: 1000
+    options: []
+  dhcpv6:
+    range_start: ""
+    lease_duration: 86400
+    ra_slaac_only: false
+    ra_allow_slaac: false
+filtering:
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_services:
+    schedule:
+      time_zone: UTC
+    ids:
+      - zhihu
+      - weibo
+      - snapchat
+      - vk
+      - tiktok
+      - mail_ru
+      - ok
+      - tinder
+      - wechat
+  protection_disabled_until: null
+  safe_search:
+    enabled: true
+    bing: true
+    duckduckgo: true
+    ecosia: true
+    google: true
+    pixabay: true
+    yandex: true
+    youtube: false
+  blocking_mode: default
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  rewrites:
+    - domain: port.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: dld-home.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: heimdall.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: mon-home.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: shadow.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: adb-home.xaoimoon.fr
+      answer: 192.168.0.2
+    - domain: port-wan.xaoimoon.fr
+      answer: 5.135.156.22
+    - domain: mon-wan.xaoimoon.fr
+      answer: 5.135.156.22
+    - domain: adb-wan.xaoimoon.fr
+      answer: 5.135.156.22
+  safe_fs_patterns:
+    - /opt/adguardhome/work/data/userfilters/*
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  filters_update_interval: 12
+  blocked_response_ttl: 10
+  filtering_enabled: true
+  parental_enabled: false
+  safebrowsing_enabled: true
+  protection_enabled: true
+clients:
+  runtime_sources:
+    whois: true
+    arp: true
+    rdns: true
+    dhcp: true
+    hosts: true
+  persistent:
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Adguard Home
+      ids:
+        - 172.1.5.1
+        - 172.1.5.2
+      tags:
+        - os_linux
+      upstreams: []
+      uid: 018d7ebc-293b-762c-8324-fefa4077a826
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Antec
+      ids:
+        - 192.168.0.6
+        - 2c:f0:5d:e4:34:d0
+      tags:
+        - device_pc
+      upstreams: []
+      uid: 018d7ebc-293b-773f-859b-bff544ea2829
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Bitwarden
+      ids:
+        - 172.1.4.1
+        - 172.1.4.2
+      tags:
+        - os_linux
+      upstreams: []
+      uid: 018d7ebc-293b-74b0-91eb-b02b6ddbcb03
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Cam Joaquim
+      ids:
+        - 192.168.0.201
+        - 74:ab:93:34:c7:c1
+      tags:
+        - device_camera
+      upstreams: []
+      uid: 018d7ebc-293b-7dd5-a776-8392d7ce7a8a
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Cam Nathan
+      ids:
+        - 192.168.0.202
+        - a0:d0:dc:3c:83:ee
+      tags:
+        - device_camera
+      upstreams: []
+      uid: 018d7ebc-293b-79ca-9f4f-5984c42445df
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Clim
+      ids:
+        - 192.168.0.200
+        - f8:81:1a:5c:b2:9b
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293b-7e14-a319-807b7209424a
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Echo Dot Joaquim
+      ids:
+        - 192.168.0.203
+        - b4:b7:42:0d:e8:7d
+      tags:
+        - device_audio
+      upstreams: []
+      uid: 018d7ebc-293b-7f4d-8d0a-60288a6ae14f
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Echo Dot Nathan
+      ids:
+        - 192.168.0.204
+        - 2c:71:ff:d3:e0:50
+      tags:
+        - device_audio
+      upstreams: []
+      uid: 018d7ebc-293b-7eea-a761-30b0781a70cf
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Echo Show
+      ids:
+        - 192.168.0.205
+        - 90:a8:22:55:cc:2a
+      tags:
+        - device_audio
+      upstreams: []
+      uid: 018d7ebc-293b-7dfd-8bbd-88837a026e3f
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Freebox Player
+      ids:
+        - 192.168.0.3
+        - 34:27:92:86:ae:d4
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293b-711c-aa8a-a48fbc8e4aa8
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: HP
+      ids:
+        - 192.168.0.4
+        - 94:57:a5:fe:60:cc
+      tags:
+        - device_printer
+      upstreams: []
+      uid: 018d7ebc-293b-7ae7-95f4-77d7be6a45a0
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Heimdall
+      ids:
+        - 172.1.1.1
+        - 172.1.1.2
+      tags:
+        - os_linux
+      upstreams: []
+      uid: 018d7ebc-293b-7da6-9470-cb3caab7230f
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: HomeServer
+      ids:
+        - 127.0.0.1
+        - 192.168.0.2
+        - 00:d8:61:6d:ea:25
+      tags:
+        - device_nas
+      upstreams: []
+      uid: 018d7ebc-293b-7df2-bb6d-db164c6068c6
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Hotte
+      ids:
+        - 192.168.0.206
+        - 3c:61:05:c5:d1:c4
+      tags:
+        - os_other
+      upstreams: []
+      uid: 018d7ebc-293b-76ab-98a2-a77f06eed6c7
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Jarvis
+      ids:
+        - 192.168.0.69
+        - c4:3a:35:0f:f9:12
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293b-763e-be29-abd6ca319e40
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Lampe
+      ids:
+        - 192.168.0.207
+        - d4:a6:51:c8:35:69
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293d-7aae-a036-6fe5b0c0e6c1
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Led Cuisine
+      ids:
+        - 192.168.0.208
+        - 40:f5:20:c8:31:5a
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293d-79d0-876e-9b90eef1e49b
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Led Tele
+      ids:
+        - 192.168.0.209
+        - b4:e8:42:d9:29:14
+      tags:
+        - device_tv
+      upstreams: []
+      uid: 018d7ebc-293d-78b4-ac6f-9f2c6d874c12
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Lumière Cuisine
+      ids:
+        - 192.168.0.210
+        - c4:4f:33:bf:d4:bc
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293d-7a4c-bcc0-328fc64a012e
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Lumière Salon
+      ids:
+        - 192.168.0.211
+        - c4:4f:33:bf:d3:5b
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-293d-788c-b4b5-23fdcd62cd74
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids:
+          - 500px
+          - 9gag
+          - aliexpress
+          - apple_streaming
+          - betano
+          - betfair
+          - betway
+          - bilibili
+          - blaze
+          - claro
+          - cloudflare
+          - clubhouse
+          - crunchyroll
+          - dailymotion
+          - discord
+          - douban
+          - ebay
+          - electronic_arts
+          - epic_games
+          - espn
+          - facebook
+          - fifa
+          - flickr
+          - gog
+          - hbomax
+          - hulu
+          - icloud_private_relay
+          - iheartradio
+          - imgur
+          - instagram
+          - iqiyi
+          - kakaotalk
+          - kik
+          - lazada
+          - leagueoflegends
+          - line
+          - linkedin
+          - mail_ru
+          - mastodon
+          - mercado_libre
+          - nintendo
+          - nvidia
+          - ok
+          - onlyfans
+          - origin
+          - paramountplus
+          - pinterest
+          - playstation
+          - pluto_tv
+          - qq
+          - rakuten_viki
+          - reddit
+          - riot_games
+          - rockstar_games
+          - shein
+          - shopee
+          - skype
+          - snapchat
+          - soundcloud
+          - spotify
+          - steam
+          - telegram
+          - tidal
+          - tiktok
+          - tinder
+          - twitter
+          - ubisoft
+          - valorant
+          - viber
+          - vimeo
+          - vk
+          - voot
+          - wargaming
+          - wechat
+          - weibo
+          - zhihu
+      name: M13 Nathan
+      ids:
+        - 192.168.0.9
+      tags:
+        - device_phone
+      upstreams: []
+      uid: 018d7ebc-293d-7ae0-80b9-713f43db9765
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: false
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: true
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids:
+          - ebay
+          - ok
+          - instagram
+          - mail_ru
+          - skype
+          - tiktok
+          - tinder
+          - vimeo
+          - viber
+          - twitter
+          - facebook
+          - wechat
+          - weibo
+          - vk
+          - hulu
+          - 9gag
+          - qq
+          - snapchat
+          - dailymotion
+          - imgur
+          - pinterest
+          - reddit
+          - telegram
+          - origin
+          - twitch
+          - amazon
+          - bilibili
+          - kakaotalk
+          - onlyfans
+          - rakuten_viki
+          - zhihu
+          - leagueoflegends
+          - line
+          - iqiyi
+          - icloud_private_relay
+          - douban
+          - mastodon
+          - soundcloud
+          - voot
+          - kik
+          - lazada
+          - 500px
+          - aliexpress
+          - betway
+          - betfair
+          - linkedin
+          - paramountplus
+          - shein
+          - shopee
+          - whatsapp
+          - discord
+          - yy
+          - wizz
+          - tumblr
+          - temu
+          - signal
+          - privacy
+          - pluto_tv
+          - plenty_of_fish
+          - olvid
+          - nebula
+          - mercado_libre
+          - looke
+          - lionsgateplus
+          - kook
+          - iheartradio
+          - hbomax
+          - globoplay
+          - flickr
+          - espn
+          - directvgo
+          - crunchyroll
+          - coolapk
+          - clubhouse
+          - bluesky
+          - box
+          - blaze
+          - bigo_live
+          - apple_streaming
+          - amino
+          - 4chan
+      name: Nathan
+      ids:
+        - 192.168.0.8
+        - 00:d8:61:3a:0e:70
+      tags:
+        - device_pc
+      upstreams: []
+      uid: 018d7ebc-293e-7951-ac50-46f00b048431
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: false
+      filtering_enabled: true
+      parental_enabled: true
+      safebrowsing_enabled: true
+      use_global_blocked_services: false
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Note 10
+      ids:
+        - 192.168.27.65
+      tags:
+        - device_phone
+      upstreams: []
+      uid: 018d7ebc-2942-771b-9d0e-8bb1a65f1ee1
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: PO17843
+      ids:
+        - 192.168.0.148
+      tags:
+        - device_laptop
+      upstreams: []
+      uid: 018d7ebc-2942-745c-ba46-90b972d36858
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Plafonnier Joaquim
+      ids:
+        - 192.168.0.212
+        - 10:d5:61:a8:9f:f9
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2942-79df-a3a2-8cf903d6c6ab
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Plafonnier Nathan
+      ids:
+        - 192.168.0.213
+        - 70:89:76:e9:25:b2
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2942-7e93-be51-82a643d38957
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Portainer
+      ids:
+        - 172.17.0.1
+        - 172.17.0.2
+      tags:
+        - os_linux
+      upstreams: []
+      uid: 018d7ebc-2943-709a-ba49-7a893fa768d8
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Remi
+      ids:
+        - 8c:14:7d:71:52:c3
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2943-71a0-ae60-f10a78811da0
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Surface-Pro-I5
+      ids:
+        - 192.168.0.13
+      tags:
+        - device_laptop
+      upstreams: []
+      uid: 018d7ebc-2943-74c4-a6f4-a587d4c6a85b
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Switch
+      ids:
+        - 34:2f:bd:4c:9e:2a
+      tags:
+        - device_gameconsole
+      upstreams: []
+      uid: 018d7ebc-2943-7afd-a4d4-6b7d9f3fd616
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: TV
+      ids:
+        - 192.168.0.5
+        - 90:f1:aa:db:42:16
+      tags:
+        - device_tv
+      upstreams: []
+      uid: 018d7ebc-2943-777b-b888-26f69bac57aa
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids:
+          - 500px
+          - 9gag
+          - activision_blizzard
+          - aliexpress
+          - amazon
+          - amino
+          - apple_streaming
+          - battle_net
+          - betano
+          - betfair
+          - betway
+          - bigo_live
+          - bilibili
+          - blaze
+          - blizzard_entertainment
+          - canais_globo
+          - claro
+          - cloudflare
+          - clubhouse
+          - coolapk
+          - crunchyroll
+          - dailymotion
+          - deezer
+          - directvgo
+          - discord
+          - douban
+          - ebay
+          - electronic_arts
+          - epic_games
+          - espn
+          - facebook
+          - fifa
+          - flickr
+          - gog
+          - hbomax
+          - hulu
+          - icloud_private_relay
+          - iheartradio
+          - imgur
+          - instagram
+          - iqiyi
+          - kakaotalk
+          - kik
+          - lazada
+          - leagueoflegends
+          - line
+          - linkedin
+          - lionsgateplus
+          - looke
+          - mail_ru
+          - mastodon
+          - mercado_libre
+          - minecraft
+          - nvidia
+          - ok
+          - olvid
+          - onlyfans
+          - origin
+          - paramountplus
+          - pinterest
+          - playstation
+          - plenty_of_fish
+          - plex
+          - pluto_tv
+          - privacy
+          - qq
+          - rakuten_viki
+          - reddit
+          - riot_games
+          - roblox
+          - rockstar_games
+          - shein
+          - shopee
+          - signal
+          - skype
+          - snapchat
+          - soundcloud
+          - spotify
+          - steam
+          - telegram
+          - temu
+          - tidal
+          - tiktok
+          - tinder
+          - tumblr
+          - twitch
+          - twitter
+          - ubisoft
+          - valorant
+          - viber
+          - vimeo
+          - vk
+          - voot
+          - wargaming
+          - wechat
+          - weibo
+          - whatsapp
+          - wizz
+          - xboxlive
+          - xiaohongshu
+          - zhihu
+          - 4chan
+          - amazon_streaming
+          - bluesky
+          - discoveryplus
+          - globoplay
+          - kook
+          - nebula
+          - nintendo
+          - samsung_tv_plus
+          - youtube
+          - yy
+      name: Tablette Joaquim
+      ids:
+        - 192.168.0.10
+      tags:
+        - device_tablet
+      upstreams: []
+      uid: 018d7ebc-2943-7525-a4fc-8ca8fd5cf8f4
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: false
+      filtering_enabled: false
+      parental_enabled: true
+      safebrowsing_enabled: true
+      use_global_blocked_services: false
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: true
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids:
+          - 9gag
+          - cloudflare
+          - dailymotion
+          - ebay
+          - facebook
+          - hulu
+          - imgur
+          - instagram
+          - mail_ru
+          - ok
+          - pinterest
+          - qq
+          - reddit
+          - skype
+          - snapchat
+          - telegram
+          - tiktok
+          - tinder
+          - twitter
+          - viber
+          - vimeo
+          - vk
+          - wechat
+          - weibo
+          - discord
+          - amazon
+          - bilibili
+          - deezer
+          - douban
+          - epic_games
+          - icloud_private_relay
+          - iqiyi
+          - kakaotalk
+          - leagueoflegends
+          - line
+          - mastodon
+          - onlyfans
+          - origin
+          - rakuten_viki
+          - soundcloud
+          - twitch
+          - zhihu
+          - whatsapp
+          - shein
+          - shopee
+          - aliexpress
+          - betfair
+          - betway
+          - clubhouse
+          - crunchyroll
+          - hbomax
+          - espn
+          - mercado_libre
+          - linkedin
+          - pluto_tv
+      name: Tablette Nathan
+      ids:
+        - 192.168.0.96
+      tags:
+        - device_laptop
+      upstreams: []
+      uid: 018d7ebc-2945-7538-aa2d-afd5e4e980d4
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: false
+      filtering_enabled: true
+      parental_enabled: true
+      safebrowsing_enabled: true
+      use_global_blocked_services: false
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Ultron
+      ids:
+        - 192.168.0.193
+        - 14:f5:f9:06:22:d4
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2946-7a08-b7fd-fe2f5f6241bf
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Vaness
+      ids:
+        - 192.168.0.7
+        - 04:7c:16:54:92:b8
+      tags:
+        - device_pc
+      upstreams: []
+      uid: 018d7ebc-2947-714d-bebf-50b501371c9f
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Volet Cuisine
+      ids:
+        - 192.168.0.214
+        - e8:68:e7:c4:9d:eb
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2947-7624-9cbb-1032b29419e5
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Volet Salon
+      ids:
+        - 192.168.0.215
+        - a4:e5:7c:aa:84:79
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2947-76e7-9911-3a9d541aaecb
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: false
+        bing: false
+        duckduckgo: false
+        ecosia: false
+        google: false
+        pixabay: false
+        yandex: false
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: WatchTower
+      ids:
+        - 172.18.0.1
+        - 172.18.0.2
+      tags:
+        - os_linux
+      upstreams: []
+      uid: 018d7ebc-2947-7c82-b233-636259d0d162
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Wifi Chambre
+      ids:
+        - 192.168.0.241
+        - 9c:0b:05:79:84:12
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2947-7b25-95a3-500df4b0bd13
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Wifi Garage
+      ids:
+        - 192.168.0.242
+        - 9c:0b:05:73:25:d2
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-2949-79a8-89eb-8a7c759915cc
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+    - safe_search:
+        enabled: true
+        bing: true
+        duckduckgo: true
+        ecosia: false
+        google: true
+        pixabay: true
+        yandex: true
+        youtube: false
+      blocked_services:
+        schedule:
+          time_zone: UTC
+        ids: []
+      name: Wifi Salon
+      ids:
+        - 192.168.0.240
+        - 9c:0b:05:75:92:20
+      tags:
+        - device_other
+      upstreams: []
+      uid: 018d7ebc-294a-7091-a340-66b2fa3dd911
+      upstreams_cache_size: 0
+      upstreams_cache_enabled: false
+      use_global_settings: true
+      filtering_enabled: false
+      parental_enabled: false
+      safebrowsing_enabled: false
+      use_global_blocked_services: true
+      ignore_querylog: false
+      ignore_statistics: false
+log:
+  enabled: true
+  file: adguardhome.log
+  max_backups: 0
+  max_size: 100
+  max_age: 3
+  compress: false
+  local_time: false
+  verbose: false
+os:
+  group: ""
+  user: ""
+  rlimit_nofile: 0
+schema_version: 29
