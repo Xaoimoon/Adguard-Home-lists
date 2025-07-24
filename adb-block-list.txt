@@ -849,3 +849,6 @@
 ||xmr.cool^
 ||xmr.2miners.com^
 ||zymerget.win^
+||telemetry.individual.githubcopilot.com
+||telemetry.elastic.co^$important
+||discord.com^$client='192.168.0.8'
