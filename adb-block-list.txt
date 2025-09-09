@@ -6,7 +6,7 @@
 ||advertising-api-eu.amazon.com^
 ! --- Google Ads
 ||pagead2.googlesyndication.com^
-||adservice.google.com^
+||adservice.google.*^$important
 ||pagead2.googleadservices.com^
 ||afs.googlesyndication.com^
 ! --- Doubleclick.net
@@ -165,6 +165,8 @@
 ||weather-analytics-events.apple.com^
 ||notes-analytics-events.apple.com^
 ! --- others
+||adsterra.com^$important
+||amplitude.com^$important
 ||ra8816eu02.magichue.net^$important
 ||wpad.gcatrans.com^$important
 ||analyticsengine.s3.amazonaws.com^$important
@@ -175,8 +177,22 @@
 ||business.samsungusa.com^$important
 ||analytics-sg.tiktok.com^$important
 ||analytics.tiktok.com^$important
+||analytics.edgekey.net^$important
+||analytics.twitter.com^$important
+||analyticsengine.s3.amazonaws.com^$important
+||analytics.s3.amazonaws.com^$important
+||analytics.google.com^$important
+||app.adjust.*^$important
+||app.*.adjust.com^$important
+||app.appsflyer.com^$important
 ||telemetry.fbx-mgt.fr^$important
 ||sso.internetat.tv^$important
+||doubleclick.net^$important
+||googleadservices.com^$important
+||guce.advertising.com^$important
+||metric.gstatic.com^$important
+||mmstat.com^$important
+||statcounter.com^$important
 ||static.btloader.com^
 ||ads2ads.net^
 ||childrenheroes.org^
@@ -197,8 +213,6 @@
 ||d.reddit.com^
 ||smetrics.samsung.com^
 ||adtago.s3.amazonaws.com^
-||analyticsengine.s3.amazonaws.com^
-||analytics.s3.amazonaws.com^
 ||advice-ads.s3.amazonaws.com^
 ||advertising-api-eu.amazon.com^
 ||pagead2.googlesyndication.com^
@@ -218,7 +232,6 @@
 ||media.net^
 ||adservetx.media.net^
 ||app-measurement.com^
-||analytics.google.com^
 ||click.googleanalytics.com^
 ||google-analytics.com^
 ||ssl.google-analytics.com^
