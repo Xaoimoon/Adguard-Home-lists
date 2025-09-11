@@ -5,6 +5,7 @@
 @@||homeserver^$important
 @@||events.gfe.nvidia.com^$important
 @@||jnn-pa.googleapis.com^$important
+@@||francetvinfo.fr^$important
 @@||cdp.geotrust.com^$client='Vaness'
 @@||fbprod.flipboard.com^$important
 @@||francetvinfo.fr^$important
