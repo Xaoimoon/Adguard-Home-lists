@@ -1,4 +1,4 @@
-@@||hibiyasleep.github.io
+@@||hibiyasleep.github.io^$important
 @@||logs.netflix.com^$important
 @@||imasdk.googleapis.com^$important
 @@||googleads.g.doubleclick.net^$important
@@ -6,3 +6,5 @@
 @@||events.gfe.nvidia.com^$important
 @@||jnn-pa.googleapis.com^$important
 @@||cdp.geotrust.com^$client='Vaness'
+@@||fbprod.flipboard.com^$important
+@@||francetvinfo.fr^$important
