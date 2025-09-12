@@ -864,4 +864,3 @@
 ||zymerget.win^$important
 ||telemetry.individual.githubcopilot.com
 ||telemetry.elastic.co^$important
-||discord.com^$important$client='192.168.0.8'
