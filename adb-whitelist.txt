@@ -9,4 +9,4 @@
 @@||flipboard.com^$important
 @@||francetvinfo.fr^$important
 @@||cdp.geotrust.com^$client='Vaness'
-@@||adb-wan.xaoimoon.fr^$important
+@@||xaoimoon.fr^$important
