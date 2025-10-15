@@ -10,3 +10,5 @@
 @@||francetvinfo.fr^$important
 @@||cdp.geotrust.com^$client='Vaness'
 @@||xaoimoon.fr^$important
+@@||us-api.mcsvc.samsung.com^$important
+@@||eu-auth2.samsungosp.com^$important
