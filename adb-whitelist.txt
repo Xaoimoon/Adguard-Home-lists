@@ -13,3 +13,4 @@
 @@||us-api.mcsvc.samsung.com^$important
 @@||eu-auth2.samsungosp.com^$important
 @@||samsungiotcloud.com^$important
+@@||bob-dispatch-prod-eu.amazon.com^$important
