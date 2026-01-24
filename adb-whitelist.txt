@@ -17,3 +17,4 @@
 @@||eu.sonic.xapp.avs.amazon.dev^$important
 @@||eu-zaz.sonic.xapp.avs.amazon.dev^$important
 @@||beta.sonic.xapp.avs.amazon.dev^$important
+@@||cdn.samsungcloudsolution.com^$important
