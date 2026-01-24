@@ -15,3 +15,5 @@
 @@||samsungiotcloud.com^$important
 @@||bob-dispatch-prod-eu.amazon.com^$important
 @@||eu.sonic.xapp.avs.amazon.dev^$important
+@@||eu-zaz.sonic.xapp.avs.amazon.dev^$important
+@@||beta.sonic.xapp.avs.amazon.dev^$important
