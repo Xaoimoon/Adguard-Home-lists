@@ -21,6 +21,10 @@
 @@||lcprd1.samsungcloudsolution.net^$important
 @@||2fe29.playfabapi.com^$important
 @@||activity.windows.com^$important
-@@||avs-alexa-14-eu.amazon.com
-@@||cdn.prod.adskit.juno.alexa.amazon.dev
-@@||prod.assets.smarthome-apl.alexa.amazon.dev
+@@||avs-alexa-14-eu.amazon.com^$important
+@@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
+@@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
+@@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
+@@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
+@@||mas-sdk.amazon.com^$important
+@@||eu-north-1.prod.sip-edge.amc.amazon.dev^$important
