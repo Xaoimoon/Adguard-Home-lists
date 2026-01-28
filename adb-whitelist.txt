@@ -21,3 +21,6 @@
 @@||lcprd1.samsungcloudsolution.net^$important
 @@||2fe29.playfabapi.com^$important
 @@||activity.windows.com^$important
+@@||avs-alexa-14-eu.amazon.com
+@@||cdn.prod.adskit.juno.alexa.amazon.dev
+@@||prod.assets.smarthome-apl.alexa.amazon.dev
