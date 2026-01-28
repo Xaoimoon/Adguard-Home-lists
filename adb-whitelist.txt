@@ -28,3 +28,4 @@
 @@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
 @@||mas-sdk.amazon.com^$important
 @@||eu-north-1.prod.sip-edge.amc.amazon.dev^$important
+@@||avs-alexa-14-eu.amazon.com^$important
