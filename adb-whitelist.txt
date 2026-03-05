@@ -30,4 +30,4 @@
 @@||avs-alexa-14-eu.amazon.com^$important
 @@||adb-wan.xaoimoon.fr^$important
 @@||adb-home.xaoimoon.fr^$important
-@@||homeberry.xaoimoon.fr/^$important
+@@||homeberry.xaoimoon.fr^$important
