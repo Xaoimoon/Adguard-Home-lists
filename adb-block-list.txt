@@ -864,3 +864,4 @@
 ||zymerget.win^$important
 ||telemetry.individual.githubcopilot.com
 ||telemetry.elastic.co^$important
+||wpad.local.xaoimoon.fr^important
