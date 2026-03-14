@@ -31,4 +31,4 @@
 @@||adb-wan.xaoimoon.fr^$important
 @@||adb-home.xaoimoon.fr^$important
 @@||homeberry.xaoimoon.fr^$important
-@@||cdn.prepare.eu.eu-south-2.iris.apx.amazon.dev
+@@||cdn.prepare.eu.eu-south-2.iris.apx.amazon.dev^$important
