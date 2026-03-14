@@ -1,36 +1,66 @@
-! --- Amazon
+# Amazon
 ||adtago.s3.amazonaws.com^$important
 ||analyticsengine.s3.amazonaws.com^$important
 ||analytics.s3.amazonaws.com^$important
 ||advice-ads.s3.amazonaws.com^$important
 ||advertising-api-eu.amazon.com^$important
-! --- Google Ads
-||pagead2.googlesyndication.com^$important
-||adservice.google.*^$important
-||pagead2.googleadservices.com^$important
-||afs.googlesyndication.com^$important
-! --- Doubleclick.net
+
+# Apple
+||advertising.apple.com^$important
+||tr.iadsdk.apple.com^$important
+||iadsdk.apple.com^$important
+||metrics.icloud.com^$important
+||metrics.apple.com^$important
+||metrics.mzstatic.com^$important
+||api-adservices.apple.com^$important
+||books-analytics-events.apple.com^$important
+||weather-analytics-events.apple.com^$important
+||notes-analytics-events.apple.com^$important
+
+# Adcolony
+||ads30.adcolony.com^$important
+||adc3-launch.adcolony.com^$important
+||events3alt.adcolony.com^$important
+||wd.adcolony.com^$important
+
+# Bugsnag
+||notify.bugsnag.com^$important
+||sessions.bugsnag.com^$important
+||api.bugsnag.com^$important
+||app.bugsnag.com^$important
+
+# Doubleclick.net
 ||stats.g.doubleclick.net^$important
 ||ad.doubleclick.net^$important
 ||static.doubleclick.net^$important
 ||m.doubleclick.net^$important
 ||mediavisor.doubleclick.net^$important
-! --- Adcolony
-||ads30.adcolony.com^$important
-||adc3-launch.adcolony.com^$important
-||events3alt.adcolony.com^$important
-||wd.adcolony.com^$important
-! --- Media.net
-||static.media.net^$important
-||media.net^$important
-||adservetx.media.net^$important
-! --- Google Analytics
+
+# Facebook
+||pixel.facebook.com^$important
+||an.facebook.com^$important
+
+# FreshWorks
+||freshmarketer.com^$important
+||claritybt.freshmarketer.com^$important
+||fwtracks.freshmarketer.com^$important
+
+# Google Analytics
 ||app-measurement.com^$important
 ||analytics.google.com^$important
 ||click.googleanalytics.com^$important
 ||google-analytics.com^$important
 ||ssl.google-analytics.com^$important
-! --- Hotjar
+
+# Google Ads
+||adservice.google.*^$important
+||googleadservices.com^$important
+||pagead2.googlesyndication.com^$important
+||pagead2.googleadservices.com^$important
+||afs.googlesyndication.com^$important
+||googlesyndication.com^$important
+
+# Hotjar
 ||adm.hotjar.com^$important
 ||identify.hotjar.com^$important
 ||insights.hotjar.com^$important
@@ -38,16 +68,20 @@
 ||surveys.hotjar.com^$important
 ||careers.hotjar.com^$important
 ||events.hotjar.io^$important
-! --- MouseFlow
-||mouseflow.com^$important
-||api.mouseflow.com^$important
-||tools.mouseflow.com^$important
-||cdn-test.mouseflow.com^$important
-! --- FreshWorks
-||freshmarketer.com^$important
-||claritybt.freshmarketer.com^$important
-||fwtracks.freshmarketer.com^$important
-! --- Luckyorange
+
+# Huawei
+||metrics.data.hicloud.com^$important
+||metrics2.data.hicloud.com^$important
+||grs.hicloud.com^$important
+||logservice.hicloud.com^$important
+||logservice1.hicloud.com^$important
+||logbak.hicloud.com^$important
+
+# LinkedIn
+||ads.linkedin.com^$important
+||analytics.pointdrive.linkedin.com^$important
+
+# Luckyorange
 ||luckyorange.com^$important
 ||api.luckyorange.com^$important
 ||realtime.luckyorange.com^$important
@@ -57,35 +91,153 @@
 ||cs.luckyorange.net^$important
 ||settings.luckyorange.net^$important
 ||stats.wp.com^$important
-! --- Bugsnag
-||notify.bugsnag.com^$important
-||sessions.bugsnag.com^$important
-||api.bugsnag.com^$important
-||app.bugsnag.com^$important
-! --- Sentry
-||browser.sentry-cdn.com^$important
-||app.getsentry.com^$important
-! --- Facebook
-||pixel.facebook.com^$important
-||an.facebook.com^$important
-! --- Twitter
-||static.ads-twitter.com^$important
-||ads-api.twitter.com^$important
-! --- LinkedIn
-||ads.linkedin.com^$important
-||analytics.pointdrive.linkedin.com^$important
-! --- Pinterest
+
+# Media.net
+||static.media.net^$important
+||media.net^$important
+||adservetx.media.net^$important
+
+# MouseFlow
+||mouseflow.com^$important
+||api.mouseflow.com^$important
+||tools.mouseflow.com^$important
+||cdn-test.mouseflow.com^$important
+
+# Nimiq
+||mon-deu-1.inf.nimiq.network^$important
+||mon-deu-2.inf.nimiq.network^$important
+||mon-deu-3.inf.nimiq.network^$important
+||mon-fra-1.inf.nimiq.network^$important
+||mon-fra-2.inf.nimiq.network^$important
+||mon-gbr-1.inf.nimiq.network^$important
+||nimiq.icemining.ca^$important
+||nimiq.terorie.com^$important
+||nimiqpool.com^$important
+||proxy-can-1.inf.nimiq.network^$important
+||proxy-deu-1.inf.nimiq.network^$important
+||proxy-deu-2.inf.nimiq.network^$important
+||proxy-fra-3.inf.nimiq.network^$important
+||proxy-gbr-1.inf.nimiq.network^$important
+||proxy-pol-1.inf.nimiq.network^$important
+||proxy-pol-2.inf.nimiq.network^$important
+||seed-1.nimiq-network.com^$important
+||seed-1.nimiq.com^$important
+||seed-1.nimiq.network^$important
+||seed-10.nimiq-network.com^$important
+||seed-10.nimiq.com^$important
+||seed-10.nimiq.network^$important
+||seed-11.nimiq-network.com^$important
+||seed-11.nimiq.com^$important
+||seed-11.nimiq.network^$important
+||seed-12.nimiq-network.com^$important
+||seed-12.nimiq.com^$important
+||seed-12.nimiq.network^$important
+||seed-13.nimiq-network.com^$important
+||seed-13.nimiq.com^$important
+||seed-13.nimiq.network^$important
+||seed-14.nimiq-network.com^$important
+||seed-14.nimiq.com^$important
+||seed-14.nimiq.network^$important
+||seed-15.nimiq-network.com^$important
+||seed-15.nimiq.com^$important
+||seed-15.nimiq.network^$important
+||seed-16.nimiq-network.com^$important
+||seed-16.nimiq.com^$important
+||seed-16.nimiq.network^$important
+||seed-17.nimiq-network.com^$important
+||seed-17.nimiq.com^$important
+||seed-17.nimiq.network^$important
+||seed-18.nimiq-network.com^$important
+||seed-18.nimiq.com^$important
+||seed-18.nimiq.network^$important
+||seed-19.nimiq-network.com^$important
+||seed-19.nimiq.com^$important
+||seed-19.nimiq.network^$important
+||seed-2.nimiq-network.com^$important
+||seed-2.nimiq.com^$important
+||seed-2.nimiq.network^$important
+||seed-20.nimiq-network.com^$important
+||seed-20.nimiq.com^$important
+||seed-20.nimiq.network^$important
+||seed-3.nimiq-network.com^$important
+||seed-3.nimiq.com^$important
+||seed-3.nimiq.network^$important
+||seed-4.nimiq-network.com^$important
+||seed-4.nimiq.com^$important
+||seed-4.nimiq.network^$important
+||seed-5.nimiq-network.com^$important
+||seed-5.nimiq.com^$important
+||seed-5.nimiq.network^$important
+||seed-6.nimiq-network.com^$important
+||seed-6.nimiq.com^$important
+||seed-6.nimiq.network^$important
+||seed-7.nimiq-network.com^$important
+||seed-7.nimiq.com^$important
+||seed-7.nimiq.network^$important
+||seed-8.nimiq-network.com^$important
+||seed-8.nimiq.com^$important
+||seed-8.nimiq.network^$important
+||seed-9.nimiq-network.com^$important
+||seed-9.nimiq.com^$important
+||seed-9.nimiq.network^$important
+||seed-can-1.inf.nimiq.network^$important
+||seed-can-2.inf.nimiq.network^$important
+||seed-deu-1.inf.nimiq.network^$important
+||seed-deu-2.inf.nimiq.network^$important
+||seed-deu-3.inf.nimiq.network^$important
+||seed-deu-4.inf.nimiq.network^$important
+||seed-fra-1.inf.nimiq.network^$important
+||seed-fra-3.inf.nimiq.network^$important
+||seed-gbr-1.inf.nimiq.network^$important
+||seed-gbr-2.inf.nimiq.network^$important
+||seed-pol-1.inf.nimiq.network^$important
+||seed-pol-2.inf.nimiq.network^$important
+||seed-pol-3.inf.nimiq.network^$important
+||seed-pol-4.inf.nimiq.network^$important
+||seed.nimiq.by^$important
+||seed.nimiq.jp^$important
+||seed.nimiqpool.com^$important
+
+# OnePlus
+||click.oneplus.cn^$important
+||open.oneplus.net^$important
+
+# Oppo
+||adsfs.oppomobile.com^$important
+||adx.ads.oppomobile.com^$important
+||ck.ads.oppomobile.com^$important
+||data.ads.oppomobile.com^$important
+
+# Pinterest
 ||ads.pinterest.com^$important
 ||log.pinterest.com^$important
 ||analytics.pinterest.com^$important
 ||trk.pinterest.com^$important
 ||widgets.pinterest.com^$important
-! --- Reddit
+
+# Realme
+||iot-eu-logser.realme.com^$important
+||iot-logser.realme.com^$important
+||bdapi-ads.realmemobile.com^$important
+||bdapi-in-ads.realmemobile.com^$important
+
+# Reddit
 ||events.reddit.com^$important
 ||events.redditmedia.com^$important
-! --- YouTube
-||ads.youtube.com^$important
-! --- TikTok
+
+# Samsung
+||business.samsungusa.com^$important
+||samsungads.com^$important
+||smetrics.samsung.com^$important
+||nmetrics.samsung.com^$important
+||samsung-com.112.2o7.net^$important
+||analytics-api.samsunghealthcn.com^$important
+
+# Sentry
+||browser.sentry-cdn.com^$important
+||app.getsentry.com^$important
+
+# TikTok
 ||ads-api.tiktok.com^$important
 ||analytics.tiktok.com^$important
 ||ads-sg.tiktok.com^$important
@@ -93,7 +245,37 @@
 ||business-api.tiktok.com^$important
 ||ads.tiktok.com^$important
 ||log.byteoversea.com^$important
-! --- Yahoo
+
+# Twitter
+||static.ads-twitter.com^$important
+||ads-api.twitter.com^$important
+
+# Unity
+||auction.unityads.unity3d.com^$important
+||webview.unityads.unity3d.com^$important
+||config.unityads.unity3d.com^$important
+||adserver.unityads.unity3d.com^$important
+
+# Xiaomi
+||api.ad.xiaomi.com^$important
+||data.mistat.xiaomi.com^$important
+||data.mistat.india.xiaomi.com^$important
+||data.mistat.rus.xiaomi.com^$important
+||sdkconfig.ad.xiaomi.com^$important
+||sdkconfig.ad.intl.xiaomi.com^$important
+||globalapi.ad.xiaomi.com^$important
+||tracking.rus.miui.com^$important
+
+# Yandex
+||extmaps-api.yandex.net^$important
+||appmetrica.yandex.ru^$important
+||adfstat.yandex.ru^$important
+||metrika.yandex.ru^$important
+||advertising.yandex.ru^$important
+||offerwall.yandex.net^$important
+||adfox.yandex.ru^$important
+
+# Yahoo
 ||ads.yahoo.com^$important
 ||analytics.yahoo.com^$important
 ||geo.yahoo.com^$important
@@ -105,90 +287,24 @@
 ||log.fc.yahoo.com^$important
 ||gemini.yahoo.com^$important
 ||adtech.yahooinc.com^$important
-! --- Yandex
-||extmaps-api.yandex.net^$important
-||appmetrica.yandex.ru^$important
-||adfstat.yandex.ru^$important
-||metrika.yandex.ru^$important
-||advertising.yandex.ru^$important
-||offerwall.yandex.net^$important
-||adfox.yandex.ru^$important
-! --- Unity
-||auction.unityads.unity3d.com^$important
-||webview.unityads.unity3d.com^$important
-||config.unityads.unity3d.com^$important
-||adserver.unityads.unity3d.com^$important
-! --- Realme
-||iot-eu-logser.realme.com^$important
-||iot-logser.realme.com^$important
-||bdapi-ads.realmemobile.com^$important
-||bdapi-in-ads.realmemobile.com^$important
-! --- Xiaomi
-||api.ad.xiaomi.com^$important
-||data.mistat.xiaomi.com^$important
-||data.mistat.india.xiaomi.com^$important
-||data.mistat.rus.xiaomi.com^$important
-||sdkconfig.ad.xiaomi.com^$important
-||sdkconfig.ad.intl.xiaomi.com^$important
-||globalapi.ad.xiaomi.com^$important
-||tracking.rus.miui.com^$important
-! --- Oppo
-||adsfs.oppomobile.com^$important
-||adx.ads.oppomobile.com^$important
-||ck.ads.oppomobile.com^$important
-||data.ads.oppomobile.com^$important
-! --- Huawei
-||metrics.data.hicloud.com^$important
-||metrics2.data.hicloud.com^$important
-||grs.hicloud.com^$important
-||logservice.hicloud.com^$important
-||logservice1.hicloud.com^$important
-||logbak.hicloud.com^$important
-! --- OnePlus
-||click.oneplus.cn^$important
-||open.oneplus.net^$important
-! --- Samsung
-||samsungads.com^$important
-||smetrics.samsung.com^$important
-||nmetrics.samsung.com^$important
-||samsung-com.112.2o7.net^$important
-||analytics-api.samsunghealthcn.com^$important
-! --- Apple
-||advertising.apple.com^$important
-||tr.iadsdk.apple.com^$important
-||iadsdk.apple.com^$important
-||metrics.icloud.com^$important
-||metrics.apple.com^$important
-||metrics.mzstatic.com^$important
-||api-adservices.apple.com^$important
-||books-analytics-events.apple.com^$important
-||weather-analytics-events.apple.com^$important
-||notes-analytics-events.apple.com^$important
-! --- others
+
+# YouTube
+||ads.youtube.com^$important
+
+# others
 ||adsterra.com^$important
 ||amplitude.com^$important
 ||ra8816eu02.magichue.net^$important
 ||wpad.gcatrans.com^$important
-||analyticsengine.s3.amazonaws.com^$important
 ||affiliationjs.s3.amazonaws.com^$important
-||advertising-api-eu.amazon.com^$important
-||analytics-api.samsunghealthcn.com^$important
-||smetrics.samsung.com^$important
-||business.samsungusa.com^$important
-||analytics-sg.tiktok.com^$important
-||analytics.tiktok.com^$important
 ||analytics.edgekey.net^$important
 ||analytics.twitter.com^$important
-||analyticsengine.s3.amazonaws.com^$important
-||analytics.s3.amazonaws.com^$important
-||analytics.google.com^$important
 ||app.adjust.*^$important
 ||app.*.adjust.com^$important
 ||app.appsflyer.com^$important
 ||telemetry.fbx-mgt.fr^$important
 ||sso.internetat.tv^$important
 ||doubleclick.net^$important
-||googleadservices.com^$important
 ||guce.advertising.com^$important
 ||metric.gstatic.com^$important
 ||mmstat.com^$important
@@ -197,7 +313,6 @@
 ||ads2ads.net^$important
 ||childrenheroes.org^$important
 ||smartadserver.com^$important
-||googlesyndication.com^$important
 ||doubleclick.com^$important
 ||advertising.amazon.com^$important
 ||rubiconproject.com^$important
@@ -207,145 +322,10 @@
 ||pubmatic.com^$important
 ||quantcast.com^$important
 ||vr1.etoro.com^$important
-||an.facebook.com^$important
 ||advertising.twitter.com^$important
-||widgets.pinterest.com^$important
 ||d.reddit.com^$important
-||smetrics.samsung.com^$important
-||adtago.s3.amazonaws.com^$important
-||advice-ads.s3.amazonaws.com^$important
-||advertising-api-eu.amazon.com^$important
-||pagead2.googlesyndication.com^$important
 ||adservice.google.com^$important
-||pagead2.googleadservices.com^$important
-||afs.googlesyndication.com^$important
-||stats.g.doubleclick.net^$important
-||ad.doubleclick.net^$important
-||static.doubleclick.net^$important
-||m.doubleclick.net^$important
-||mediavisor.doubleclick.net^$important
-||ads30.adcolony.com^$important
-||adc3-launch.adcolony.com^$important
-||events3alt.adcolony.com^$important
-||wd.adcolony.com^$important
-||static.media.net^$important
-||media.net^$important
-||adservetx.media.net^$important
-||app-measurement.com^$important
-||click.googleanalytics.com^$important
-||google-analytics.com^$important
-||ssl.google-analytics.com^$important
-||adm.hotjar.com^$important
-||identify.hotjar.com^$important
-||insights.hotjar.com^$important
-||script.hotjar.com^$important
-||surveys.hotjar.com^$important
-||careers.hotjar.com^$important
-||events.hotjar.io^$important
-||mouseflow.com^$important
-||api.mouseflow.com^$important
-||tools.mouseflow.com^$important
-||cdn-test.mouseflow.com^$important
-||freshmarketer.com^$important
-||claritybt.freshmarketer.com^$important
-||fwtracks.freshmarketer.com^$important
-||luckyorange.com^$important
-||api.luckyorange.com^$important
-||realtime.luckyorange.com^$important
-||cdn.luckyorange.com^$important
-||w1.luckyorange.com^$important
-||upload.luckyorange.net^$important
-||cs.luckyorange.net^$important
-||settings.luckyorange.net^$important
-||stats.wp.com^$important
-||notify.bugsnag.com^$important
-||sessions.bugsnag.com^$important
-||api.bugsnag.com^$important
-||app.bugsnag.com^$important
-||browser.sentry-cdn.com^$important
-||app.getsentry.com^$important
-||pixel.facebook.com^$important
-||an.facebook.com^$important
-||static.ads-twitter.com^$important
-||ads-api.twitter.com^$important
-||ads.linkedin.com^$important
-||analytics.pointdrive.linkedin.com^$important
-||ads.pinterest.com^$important
-||log.pinterest.com^$important
-||analytics.pinterest.com^$important
-||trk.pinterest.com^$important
-||widgets.pinterest.com^$important
-||events.reddit.com^$important
-||events.redditmedia.com^$important
-||ads.youtube.com^$important
-||ads-api.tiktok.com^$important
-||analytics.tiktok.com^$important
-||ads-sg.tiktok.com^$important
-||analytics-sg.tiktok.com^$important
-||business-api.tiktok.com^$important
-||ads.tiktok.com^$important
-||log.byteoversea.com^$important
-||ads.yahoo.com^$important
-||analytics.yahoo.com^$important
-||geo.yahoo.com^$important
-||udc.yahoo.com^$important
-||udcm.yahoo.com^$important
-||advertising.yahoo.com^$important
-||analytics.query.yahoo.com^$important
-||partnerads.ysm.yahoo.com^$important
-||log.fc.yahoo.com^$important
-||gemini.yahoo.com^$important
-||adtech.yahooinc.com^$important
-||extmaps-api.yandex.net^$important
-||appmetrica.yandex.ru^$important
-||adfstat.yandex.ru^$important
-||metrika.yandex.ru^$important
-||advertising.yandex.ru^$important
-||offerwall.yandex.net^$important
-||adfox.yandex.ru^$important
-||auction.unityads.unity3d.com^$important
-||webview.unityads.unity3d.com^$important
-||config.unityads.unity3d.com^$important
-||adserver.unityads.unity3d.com^$important
-||iot-eu-logser.realme.com^$important
-||iot-logser.realme.com^$important
-||bdapi-ads.realmemobile.com^$important
-||bdapi-in-ads.realmemobile.com^$important
-||api.ad.xiaomi.com^$important
-||data.mistat.xiaomi.com^$important
-||data.mistat.india.xiaomi.com^$important
-||data.mistat.rus.xiaomi.com^$important
-||sdkconfig.ad.xiaomi.com^$important
-||sdkconfig.ad.intl.xiaomi.com^$important
-||globalapi.ad.xiaomi.com^$important
-||tracking.rus.miui.com^$important
-||adsfs.oppomobile.com^$important
-||adx.ads.oppomobile.com^$important
-||ck.ads.oppomobile.com^$important
-||data.ads.oppomobile.com^$important
-||metrics.data.hicloud.com^$important
-||metrics2.data.hicloud.com^$important
-||grs.hicloud.com^$important
-||logservice.hicloud.com^$important
-||logservice1.hicloud.com^$important
-||logbak.hicloud.com^$important
 ||click.oneplus.cn
-||open.oneplus.net^$important
-||samsungads.com^$important
-||smetrics.samsung.com^$important
-||nmetrics.samsung.com^$important
-||samsung-com.112.2o7.net^$important
-||analytics-api.samsunghealthcn.com^$important
-||advertising.apple.com^$important
-||tr.iadsdk.apple.com^$important
-||iadsdk.apple.com^$important
-||metrics.icloud.com^$important
-||metrics.apple.com^$important
-||metrics.mzstatic.com^$important
-||api-adservices.apple.com^$important
-||books-analytics-events.apple.com^$important
-||weather-analytics-events.apple.com^$important
-||notes-analytics-events.apple.com^$important
 ||cdn.appround.biz^$important
 ||cdn.download.sweetpacks.com^$important
 ||cdn.insta.playbryte.com^$important
@@ -620,12 +600,6 @@
 ||minexmr.stream^$important
 ||minr.pw^$important
 ||mm.zubovskaya-banya.ru^$important
-||mon-deu-1.inf.nimiq.network^$important
-||mon-deu-2.inf.nimiq.network^$important
-||mon-deu-3.inf.nimiq.network^$important
-||mon-fra-1.inf.nimiq.network^$important
-||mon-fra-2.inf.nimiq.network^$important
-||mon-gbr-1.inf.nimiq.network^$important
 ||monerominer.rocks^$important
 ||money-maker-default.info^$important
 ||mxcdn1.now.sh^$important
@@ -639,9 +613,6 @@
 ||nfwebminer.com^$important
 ||niematego.tk^$important
 ||nim.sh^$important
-||nimiq.icemining.ca^$important
-||nimiq.terorie.com^$important
-||nimiqpool.com^$important
 ||nimwss-us-shark.lolopool.com^$important
 ||ninaning.com^$important
 ||nitrokod.com^$important
@@ -678,13 +649,6 @@
 ||pr0gram.org^$important
 ||premiumstats.xyz^$important
 ||proofly.win^$important
-||proxy-can-1.inf.nimiq.network^$important
-||proxy-deu-1.inf.nimiq.network^$important
-||proxy-deu-2.inf.nimiq.network^$important
-||proxy-fra-3.inf.nimiq.network^$important
-||proxy-gbr-1.inf.nimiq.network^$important
-||proxy-pol-1.inf.nimiq.network^$important
-||proxy-pol-2.inf.nimiq.network^$important
 ||reauthenticator.com^$important
 ||renhertfo.com^$important
 ||roastedvolt.net^$important
@@ -704,83 +668,6 @@
 ||sass2.authcaptcha.com^$important
 ||scaleway.ovh^$important
 ||sea2.authcaptcha.com^$important
-||seed-1.nimiq-network.com^$important
-||seed-1.nimiq.com^$important
-||seed-1.nimiq.network^$important
-||seed-10.nimiq-network.com^$important
-||seed-10.nimiq.com^$important
-||seed-10.nimiq.network^$important
-||seed-11.nimiq-network.com^$important
-||seed-11.nimiq.com^$important
-||seed-11.nimiq.network^$important
-||seed-12.nimiq-network.com^$important
-||seed-12.nimiq.com^$important
-||seed-12.nimiq.network^$important
-||seed-13.nimiq-network.com^$important
-||seed-13.nimiq.com^$important
-||seed-13.nimiq.network^$important
-||seed-14.nimiq-network.com^$important
-||seed-14.nimiq.com^$important
-||seed-14.nimiq.network^$important
-||seed-15.nimiq-network.com^$important
-||seed-15.nimiq.com^$important
-||seed-15.nimiq.network^$important
-||seed-16.nimiq-network.com^$important
-||seed-16.nimiq.com^$important
-||seed-16.nimiq.network^$important
-||seed-17.nimiq-network.com^$important
-||seed-17.nimiq.com^$important
-||seed-17.nimiq.network^$important
-||seed-18.nimiq-network.com^$important
-||seed-18.nimiq.com^$important
-||seed-18.nimiq.network^$important
-||seed-19.nimiq-network.com^$important
-||seed-19.nimiq.com^$important
-||seed-19.nimiq.network^$important
-||seed-2.nimiq-network.com^$important
-||seed-2.nimiq.com^$important
-||seed-2.nimiq.network^$important
-||seed-20.nimiq-network.com^$important
-||seed-20.nimiq.com^$important
-||seed-20.nimiq.network^$important
-||seed-3.nimiq-network.com^$important
-||seed-3.nimiq.com^$important
-||seed-3.nimiq.network^$important
-||seed-4.nimiq-network.com^$important
-||seed-4.nimiq.com^$important
-||seed-4.nimiq.network^$important
-||seed-5.nimiq-network.com^$important
-||seed-5.nimiq.com^$important
-||seed-5.nimiq.network^$important
-||seed-6.nimiq-network.com^$important
-||seed-6.nimiq.com^$important
-||seed-6.nimiq.network^$important
-||seed-7.nimiq-network.com^$important
-||seed-7.nimiq.com^$important
-||seed-7.nimiq.network^$important
-||seed-8.nimiq-network.com^$important
-||seed-8.nimiq.com^$important
-||seed-8.nimiq.network^$important
-||seed-9.nimiq-network.com^$important
-||seed-9.nimiq.com^$important
-||seed-9.nimiq.network^$important
-||seed-can-1.inf.nimiq.network^$important
-||seed-can-2.inf.nimiq.network^$important
-||seed-deu-1.inf.nimiq.network^$important
-||seed-deu-2.inf.nimiq.network^$important
-||seed-deu-3.inf.nimiq.network^$important
-||seed-deu-4.inf.nimiq.network^$important
-||seed-fra-1.inf.nimiq.network^$important
-||seed-fra-3.inf.nimiq.network^$important
-||seed-gbr-1.inf.nimiq.network^$important
-||seed-gbr-2.inf.nimiq.network^$important
-||seed-pol-1.inf.nimiq.network^$important
-||seed-pol-2.inf.nimiq.network^$important
-||seed-pol-3.inf.nimiq.network^$important
-||seed-pol-4.inf.nimiq.network^$important
-||seed.nimiq.by^$important
-||seed.nimiq.jp^$important
-||seed.nimiqpool.com^$important
 ||serie-vostfr.com^$important
 ||serv1swork.com^$important
 ||service4refresh.info^$important
@@ -865,3 +752,4 @@
 ||telemetry.individual.githubcopilot.com
 ||telemetry.elastic.co^$important
 ||wpad.local.xaoimoon.fr^important
+||_ldap._tcp.dc._msdcs.local.xaoimoon.fr^$important

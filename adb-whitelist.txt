@@ -1,34 +1,54 @@
-@@||hibiyasleep.github.io^$important
-@@||logs.netflix.com^$important
-@@||imasdk.googleapis.com^$important
-@@||googleads.g.doubleclick.net^$important
-@@||homeserver^$important
-@@||events.gfe.nvidia.com^$important
-@@||jnn-pa.googleapis.com^$important
-@@||francetvinfo.fr^$important
-@@||flipboard.com^$important
-@@||francetvinfo.fr^$important
-@@||cdp.geotrust.com^$client='Vaness'
-@@||us-api.mcsvc.samsung.com^$important
-@@||eu-auth2.samsungosp.com^$important
-@@||samsungiotcloud.com^$important
-@@||bob-dispatch-prod-eu.amazon.com^$important
-@@||eu.sonic.xapp.avs.amazon.dev^$important
-@@||eu-zaz.sonic.xapp.avs.amazon.dev^$important
-@@||beta.sonic.xapp.avs.amazon.dev^$important
-@@||cdn.samsungcloudsolution.com^$important
-@@||lcprd1.samsungcloudsolution.net^$important
-@@||2fe29.playfabapi.com^$important
-@@||activity.windows.com^$important
-@@||avs-alexa-14-eu.amazon.com^$important
-@@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
-@@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
-@@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
-@@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
-@@||mas-sdk.amazon.com^$important
-@@||eu-north-1.prod.sip-edge.amc.amazon.dev^$important
-@@||avs-alexa-14-eu.amazon.com^$important
+# Local
 @@||adb-wan.xaoimoon.fr^$important
 @@||adb-home.xaoimoon.fr^$important
+@@||homeserver.xaoimoon.fr^$important
 @@||homeberry.xaoimoon.fr^$important
+
+# Amazon
+@@||avs-alexa-14-eu.amazon.com^$important
+@@||beta.sonic.xapp.avs.amazon.dev^$important
+@@||bob-dispatch-prod-eu.amazon.com^$important
 @@||cdn.prepare.eu.eu-south-2.iris.apx.amazon.dev^$important
+@@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
+@@||eu-north-1.prod.sip-edge.amc.amazon.dev^$important
+@@||eu.sonic.xapp.avs.amazon.dev^$important
+@@||eu-zaz.sonic.xapp.avs.amazon.dev^$important
+@@||mas-sdk.amazon.com^$important
+@@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
+
+# Google
+@@||imasdk.googleapis.com^$important
+@@||jnn-pa.googleapis.com^$important
+@@||googleads.g.doubleclick.net^$important
+
+# Nvidia
+@@||events.gfe.nvidia.com^$important
+
+# Others
+@@||2fe29.playfabapi.com^$important
+
+# FFXIV
+@@||hibiyasleep.github.io^$important
+
+# Microsoft
+@@||activity.windows.com^$important
+@@||fpt.microsoft.com^$important
+
+# Mobile
+@@||flipboard.com^$important
+
+# Samsung
+@@||cdn.samsungcloudsolution.com^$important
+@@||eu-auth2.samsungosp.com^$important
+@@||lcprd1.samsungcloudsolution.net^$important
+@@||osb-apps-v2.samsungqbe.com^$important
+@@||osb-v2.samsungqbe.com^$important
+@@||samsungiotcloud.com^$important
+@@||sentry.oqee.net^$important
+@@||time.samsungcloudsolution.com^$important
+@@||us-api.mcsvc.samsung.com^$important
+
+# TV
+@@||francetvinfo.fr^$important
+@@||logs.netflix.com^$important
+@@||tvx.adgrx.com^$important
