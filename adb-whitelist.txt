@@ -1,3 +1,4 @@
+
 # Local
 @@||adb-wan.xaoimoon.fr^$important
 @@||adb-home.xaoimoon.fr^$important
@@ -11,8 +12,10 @@
 @@||cdn.prepare.eu.eu-south-2.iris.apx.amazon.dev^$important
 @@||cdn.prod.adskit.juno.alexa.amazon.dev^$important
 @@||eu-north-1.prod.sip-edge.amc.amazon.dev^$important
+@@||eu-south-2.gql.music.amazon.dev^$important
 @@||eu.sonic.xapp.avs.amazon.dev^$important
 @@||eu-zaz.sonic.xapp.avs.amazon.dev^$important
+@@||gql.music.amazon.dev^$important
 @@||mas-sdk.amazon.com^$important
 @@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
 
@@ -26,6 +29,7 @@
 
 # Others
 @@||2fe29.playfabapi.com^$important
+@@||dd.sncf-connect.com^$important
 
 # FFXIV
 @@||hibiyasleep.github.io^$important
@@ -52,3 +56,4 @@
 @@||francetvinfo.fr^$important
 @@||logs.netflix.com^$important
 @@||tvx.adgrx.com^$important
+@@||youtubei.googleapis.com^$important

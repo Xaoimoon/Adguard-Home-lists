@@ -29,6 +29,9 @@
 ||api.bugsnag.com^$important
 ||app.bugsnag.com^$important
 
+# Credit Agricole
+||apm.ca-technologies.credit-agricole.fr^$important
+
 # Doubleclick.net
 ||stats.g.doubleclick.net^$important
 ||ad.doubleclick.net^$important
