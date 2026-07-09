@@ -44,6 +44,10 @@
 # Mobile
 @@||flipboard.com^$important
 
+# Remarkable
+@@||device.cloud.remarkable.com
+@@||ota-cdn.memfault.com
+
 # Samsung
 @@||cdn.samsungcloudsolution.com^$important
 @@||eu-auth2.samsungosp.com^$important
