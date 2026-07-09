@@ -22,6 +22,7 @@
 # Discord
 @@||updates.discord.com
 @@||discord.com
+@@||gateway.discord.gg
 
 # Google
 @@||imasdk.googleapis.com^$important
