@@ -21,6 +21,7 @@
 
 # Discord
 @@||updates.discord.com
+@@||discord.com
 
 # Google
 @@||imasdk.googleapis.com^$important
