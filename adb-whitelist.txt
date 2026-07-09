@@ -19,6 +19,9 @@
 @@||mas-sdk.amazon.com^$important
 @@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
 
+# Discord
+@@||updates.discord.com
+
 # Google
 @@||imasdk.googleapis.com^$important
 @@||jnn-pa.googleapis.com^$important
