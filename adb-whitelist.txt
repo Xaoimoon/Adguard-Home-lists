@@ -39,6 +39,9 @@
 # FFXIV
 @@||hibiyasleep.github.io^$important
 
+# Linkedin
+@@||www.linkedin.com
+
 # Microsoft
 @@||activity.windows.com^$important
 @@||fpt.microsoft.com^$important
