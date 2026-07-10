@@ -20,9 +20,11 @@
 @@||prod.assets.smarthome-apl.alexa.amazon.dev^$important
 
 # Discord
-@@||updates.discord.com
+@@||discordapp.com
 @@||discord.com
-@@||gateway.discord.gg
+@@||discord.gg
+@@||discordapp.net
+
 
 # Google
 @@||imasdk.googleapis.com^$important
