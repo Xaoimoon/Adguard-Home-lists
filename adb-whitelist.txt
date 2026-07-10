@@ -49,6 +49,9 @@
 # Mobile
 @@||flipboard.com^$important
 
+# Reddit
+@@||reddit.com
+
 # Remarkable
 @@||device.cloud.remarkable.com
 @@||ota-cdn.memfault.com
