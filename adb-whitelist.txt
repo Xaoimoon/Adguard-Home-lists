@@ -24,6 +24,8 @@
 @@||discord.com
 @@||discord.gg
 @@||discordapp.net
+@@||discord.media
+@@||latency.discord.media
 
 
 # Google
