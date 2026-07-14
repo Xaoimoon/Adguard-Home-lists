@@ -44,7 +44,7 @@
 @@||hibiyasleep.github.io^$important
 
 # Linkedin
-@@||www.linkedin.com
+@@||linkedin.com
 
 # Microsoft
 @@||activity.windows.com^$important
