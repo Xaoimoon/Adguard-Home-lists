@@ -45,7 +45,7 @@
 
 # Linkedin
 @@||linkedin.com
-@@||static.licdn.com
+@@||licdn.com
 
 # Microsoft
 @@||activity.windows.com^$important
