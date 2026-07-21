@@ -1,9 +1,6 @@
 
 # Local
-@@||adb-wan.xaoimoon.fr^$important
-@@||adb-home.xaoimoon.fr^$important
-@@||homeserver.xaoimoon.fr^$important
-@@||homeberry.xaoimoon.fr^$important
+@@||xaoimoon.fr^$important
 
 # Amazon
 @@||avs-alexa-14-eu.amazon.com^$important
