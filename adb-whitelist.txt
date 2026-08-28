@@ -53,6 +53,9 @@
 
 # Reddit
 @@||reddit.com
+@@||redditstatic.com^$important
+@@||redditmedia.com^$important
+@@||preview.redd.it^$important
 
 # Remarkable
 @@||device.cloud.remarkable.com
