@@ -77,3 +77,7 @@
 @@||logs.netflix.com^$important
 @@||tvx.adgrx.com^$important
 @@||youtubei.googleapis.com^$important
+
+
+# Vinci
+@@||france-south-vinciaut.gpo2cs2ggngy.gw.gpcloudservice.com^$important
