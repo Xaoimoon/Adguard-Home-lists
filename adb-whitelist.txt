@@ -52,7 +52,7 @@
 @@||flipboard.com^$important
 
 # Pinterest
-@@||s.pinimg.com^$important
+@@||pinimg.com^$important
 @@||fr.pinterest.com^$important
 
 # Reddit
