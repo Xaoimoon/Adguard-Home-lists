@@ -53,7 +53,7 @@
 
 # Pinterest
 @@||pinimg.com^$important
-@@||fr.pinterest.com^$important
+@@||pinterest.com^$important
 
 # Reddit
 @@||reddit.com
