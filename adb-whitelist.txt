@@ -51,6 +51,9 @@
 # Mobile
 @@||flipboard.com^$important
 
+# Pinterest
+@@||fr.pinterest.com^$important
+
 # Reddit
 @@||reddit.com
 @@||redditstatic.com^$important
