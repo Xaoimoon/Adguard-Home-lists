@@ -82,6 +82,8 @@
 @@||tvx.adgrx.com^$important
 @@||youtubei.googleapis.com^$important
 
+# WowUp / Wago (fenêtre de consentement NitroPay)
+@@||s.nitropay.com^$important
 
 # Vinci
 @@||france-south-vinciaut.gpo2cs2ggngy.gw.gpcloudservice.com^$important
